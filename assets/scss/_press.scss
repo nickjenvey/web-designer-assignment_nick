@@ -1,0 +1,168 @@
+///////////////////////////////////////////////////
+// Press
+///////////////////////////////////////////////////
+
+.press {
+    &__wrapper {
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 5.375rem 0 7.938rem;
+        position: relative;
+
+        @media only screen and (max-width: 1280px) {
+            max-width: 100%;
+            padding: 5.375rem 2rem 7.938rem;
+        }
+    }
+
+    h2 {
+        display: block;
+        text-align: center;
+        font: {
+            size: 1.5rem;
+            weight: 500;
+        }
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font: {
+            size: 1.25rem;
+            weight: 500;
+        }
+        margin-bottom: 1.25rem;
+    }
+
+    a {
+        font: {
+            size: .875rem;
+            weight: 400;
+        }
+        text-decoration: underline;
+        @include colour-change;
+
+        &:hover {
+            color: $secondary-colour;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+
+        @media only screen and (max-width: 775px) {
+            flex-direction: column;
+        }
+    }
+
+    &__content {
+        background: {
+            color: $primary-colour;
+        }
+        @include drop-shadow;
+        border-radius: 8px;
+
+        &:nth-child(2n) {
+            margin: 0 2rem;
+
+            @media only screen and (max-width: 775px) {
+                margin: 2rem 0;
+            }
+        }
+
+        &__logo {
+            height: 5rem;
+            background: {
+                color: #fff;
+                repeat: no-repeat;
+                position: center;
+            }
+            -webkit-border-radius: 8px 8px 0 0;
+            border-radius: 8px 8px 0 0;
+
+            @media only screen and (max-width: 1280px) {
+                background: {
+                    size: 75%;
+                }
+            }
+
+            @media only screen and (max-width: 775px) {
+                background: {
+                    size: 17.188rem;
+                }
+            }
+
+            &--tc {
+                background: {
+                    image: url('../images/techcrunch.png');
+                }
+            }
+
+            &--tv {
+                background: {
+                    image: url('../images/the-verge.png');
+                }
+            }
+
+            &--w {
+                background: {
+                    image: url('../images/wired.png');
+                }
+            }
+        }
+
+        &__text {
+            padding: 1.25rem 1.125rem;
+
+            p {
+                margin: 1.438rem 0;
+            }
+        }
+    }
+
+    .users, .vids {
+        display: block;
+        position: absolute;
+        bottom: 0;
+
+        h4 {
+            color: #270470;
+            font: {
+                family: 'Roboto Mono', monospace;
+                size: 2.5rem;
+            }
+
+            @media only screen and (max-width: 860px) {
+                font: {
+                    size: 1.75rem;
+                }
+            }
+        }
+    }
+
+    .users {
+        left: -2.813rem;
+
+        @media only screen and (max-width: 1390px) {
+            left: 0;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            left: 1rem
+        }
+    }
+
+    .vids {
+        right: -2.813rem;
+
+        @media only screen and (max-width: 1390px) {
+            right :0;
+        }
+
+        @media only screen and (max-width: 1280px) {
+            right: 1rem;
+        }
+    }
+}

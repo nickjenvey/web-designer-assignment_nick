@@ -1,0 +1,51 @@
+///////////////////////////////////////////////////
+// Base
+///////////////////////////////////////////////////
+
+@charset "UTF-8";
+@import 'normalize';
+@import 'variables';
+@import 'header';
+@import 'intro';
+@import 'steps-section';
+@import 'quote';
+@import 'video';
+@import 'press';
+@import 'call-to-action';
+@import 'footer';
+
+html {
+    font-size: 16px;
+
+    @media only screen and (max-width: 860px) {
+        font: {
+            size: 14px;
+        }
+    }
+}
+
+body {
+    background: {
+        color: #330A8B;
+    }
+    font: {
+        family: 'Poppins', sans-serif;
+        weight: 400;
+    }
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    font: {
+        weight: 500;
+    }
+    text-decoration: none;
+}
+
+p {
+    font: {
+        size: .875rem;
+    }
+    line-height: 2;
+}

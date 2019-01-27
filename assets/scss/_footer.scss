@@ -1,0 +1,46 @@
+///////////////////////////////////////////////////
+// Footer
+///////////////////////////////////////////////////
+
+footer {
+    padding: 5rem 0 2rem;
+    font: {
+        family: 'Roboto', sans-serif;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        max-width: 80rem;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1280px) {
+            max-width: 100%;
+            padding: 0 2rem;
+        }
+    }
+
+    nav {
+        a {
+            font: {
+                size: .875rem;
+                weight: 500;
+            }
+            margin-right: 1rem;
+            text-decoration: underline;
+            @include colour-change;
+
+            &:hover {
+                color: $secondary-colour;
+            }
+        }
+    }
+
+    .footer__copyright {
+        font: {
+            weight: 400;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////
+// Video
+///////////////////////////////////////////////////
+
+.video {
+    background: {
+        color: $alt-colour;
+    }
+    
+    &__wrapper {
+        max-width: 62.5rem;
+        margin: 0 auto;
+
+        &__viewport {
+            position: relative;
+            padding-bottom: 56.25%;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width :100%;
+            }
+        }
+    }
+}

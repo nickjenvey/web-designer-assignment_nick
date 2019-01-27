@@ -1,0 +1,29 @@
+///////////////////////////////////////////////////
+// Variables
+///////////////////////////////////////////////////
+
+$primary-colour: #4104C2;
+$secondary-colour: #dc2064;
+$alt-colour: #1f0062;
+$register-colour: #828F92;
+
+@mixin drop-shadow {
+    -webkit-box-shadow: 0 4px 16px 0 rgba(35,5,97,.4);
+    box-shadow: 0 4px 16px 0 rgba(35,5,97,.4);
+}
+
+@mixin colour-change {
+    -webkit-transition: all 250ms ease-out;
+    -moz-transition: all 250ms ease-out;
+    -ms-transition: all 250ms ease-out;
+    -o-transition: all 250ms ease-out;
+    transition: all 250ms ease-out;
+}
+
+@mixin button-bump {
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}

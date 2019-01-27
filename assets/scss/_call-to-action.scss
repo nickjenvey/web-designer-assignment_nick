@@ -1,0 +1,39 @@
+///////////////////////////////////////////////////
+// Call To Action
+///////////////////////////////////////////////////
+
+.call-to-action {
+    background: {
+        color: $primary-colour;
+    }
+    padding: 1rem 0;
+    
+    &__wrapper {
+        max-width: 80rem;
+        margin: 0 auto;
+        text-align: center;
+        
+        a {
+            display: inline-block;
+
+            &.call-to-action__btn {
+                background: {
+                    color: $secondary-colour
+                }
+                font: {
+                    size: .875rem;
+                    weight: 500;
+                }
+                border: none;
+                border-radius: 100px;
+                padding: .625rem 2.813rem;
+                @include button-bump;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    @include drop-shadow;
+                }
+            }
+        }
+    }
+}
